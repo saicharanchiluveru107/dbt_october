@@ -1,0 +1,24 @@
+models:
+  - name: Acc1
+    columns:
+      - name: ID
+        tests:
+          - unique:
+              config:
+                store_failures: true
+          - not_null:
+              config:
+                store_failures: true
+
+  - name: Cust
+    columns:
+      - name: CUSTOMER_STATUS
+        tests:
+          - accepted_values:
+              arguments:
+               values: ['ACTIVE','INACTIVE','TEST']
+              config:   
+                store_failures: true
+          
+          
+        

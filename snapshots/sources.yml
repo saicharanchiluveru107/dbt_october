@@ -1,0 +1,6 @@
+sources:
+  - name: GNIT 
+    database: ORACLE
+    schema: RAW_SC
+    tables:
+      - name: CUSTOMER

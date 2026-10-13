@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: ins_raw
+    database: INSURANCE_DB
+    schema: INS_SC
+    tables:
+      - name: raw_customers
+      - name: raw_securities
+      - name: raw_transactions
+
+
+       

@@ -1,0 +1,29 @@
+sources:
+  - name: september
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCDS_SF100TCL
+    tables:
+      - name: CALL_CENTER
+      
+  - name: january
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCDS_SF10TCL
+    tables:
+      - name: CUSTOMER   
+  - name: GNIT 
+    database: ORACLE
+    schema: RAW_SC_I 
+    tables:
+      - name: CUST_TEST
+  - name: CBIT 
+    database: TEST_DB
+    schema: TEST_SC 
+    tables:
+      - name: CUSTOMERS
+      - name: ORDERS
+  
+  - name: CVR 
+    database: INSURANCE_DB
+    schema: RAW_SC 
+    tables:
+      - name: CUSTOMER_ORDERS

@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+  - name: fact_transactions
+    columns:
+      - name: transaction_id
+        tests:
+          - not_null
+      - name: transaction_category
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['REVENUE', 'EXPENSE', 'OTHER']

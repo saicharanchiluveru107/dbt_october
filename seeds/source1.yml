@@ -1,0 +1,6 @@
+seeds:
+  - name: CUSTOMER456
+    config:
+      column_types:
+        COUNTRY: varchar
+        PLANET: varchar   
