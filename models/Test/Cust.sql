@@ -1,3 +1,3 @@
 
 select * from {{ source('CBIT', 'CUSTOMERS') }}
-where AGE < 18
+where AGE = 18
